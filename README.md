@@ -24,6 +24,11 @@
 - **로또 추첨**
     - 랜덤 번호 6개 + 보너스 번호 1개 추첨
     - 숫자별 색상 원형 스타일로 시각화
+    - 
+## 📲 실행 방법
+1. Android Studio에서 `MyHomeTime` 프로젝트 열기
+2. 에뮬레이터 또는 실제 기기로 실행
+3. `Start` 버튼을 눌러 홈 화면으로 이동
 
 ---
 
@@ -52,7 +57,7 @@ https://www.figma.com/design/iCuOsSZdxQ0pcAmuLqgzm8/MyHomeTimeApp?node-id=0-1&p=
 ---
 
 ## 📁 프로젝트 구조 (간략 예시)
-
+```
 MyHomeTime/
 ├── app/
 │ ├── src/
@@ -68,7 +73,7 @@ MyHomeTime/
 │ │ │ ├── drawable/
 │ │ │ └── values/
 ├── README.md
-
+```
 
 ---
 
