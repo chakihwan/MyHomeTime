@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#C2B8F4">
+
+    <!-- 앱 타이틀 -->
+    <TextView
+        android:id="@+id/homeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MyHomeTime"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 캘린더 뷰 대체 박스 (임시 뷰 구성) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_white_box"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp">
+
+        <!-- 월 이동 컨트롤 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/prevMonthButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="◀"
+                android:background="@null"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/monthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2025년 6월"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginHorizontal="16dp" />
+
+            <Button
+                android:id="@+id/nextMonthButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶"
+                android:background="@null"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- 날짜 (간단히 구성) -->
+        <TextView
+            android:id="@+id/calendarPlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="여기에 달력 구성"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:background="#EFEFEF" />
+
+        <!-- 선택 날짜 정보 -->
+        <TextView
+            android:id="@+id/selectedDateInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선택한 날짜: 6월 19일\n- 아기 예방접종\n- 남편 회식"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+    <!-- 하단 버튼 3개 (GridLayout으로 2+1 구성) -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:rowOrderPreserved="false"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/timetableButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="시간표"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_button_white"
+            android:textColor="#000"
+            android:layout_margin="8dp"
+            android:paddingVertical="16dp" />
+
+        <Button
+            android:id="@+id/mealButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="급식 보기"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_button_white"
+            android:textColor="#000"
+            android:layout_margin="8dp"
+            android:paddingVertical="16dp" />
+
+        <Button
+            android:id="@+id/lottoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:text="로또 추첨"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_button_white"
+            android:textColor="#000"
+            android:layout_margin="8dp"
+            android:paddingVertical="16dp" />
+    </GridLayout>
+</LinearLayout>
