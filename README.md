@@ -75,4 +75,4 @@ MyHomeTime/
 ## 🙋‍♀️ 개발자
 
 - 차기환 | Korea Polytechnic University
-- Major: Artificial Intelligence Software  
+- Major: Artificial Intelligence Software   
